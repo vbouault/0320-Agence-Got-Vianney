@@ -386,11 +386,12 @@ footer div h1 {
     text-align: center;
     color: #e4f1e7;
     font-size: 20px;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 .logo-footer{
     width: 180px;
     height: 115px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
@@ -435,12 +436,7 @@ footer a:link{
     height: 100px;
     cursor: pointer;
 }
-.end-color-footer{
-    background-color: #ff9135;
-    width: auto;
-    height: 10px;
-    margin:0px;
-}
+
 .rebrique-footer{
     color:#e4f1e7;
 }
@@ -448,7 +444,7 @@ footer a:link{
     margin-right: 40px;
     font-size: 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .rebrique-footer ul{
     list-style: none;
@@ -758,7 +754,7 @@ form {
        text-decoration: none;
     }
 /*================@media screen and (min-width: 740px) yacine footer Début*/
-    .logo-footer{
+    /* .logo-footer{
         width: 250px;
         height: 120px;
     }
@@ -767,7 +763,7 @@ form {
         margin-left: 50px;
     }
     .back-color{
-        height:575px; 
+        height:auto; 
     }
     .rebrique-footer{
         float: right;
@@ -799,6 +795,12 @@ form {
     .a-logo-footer{
         margin: 0;
         padding: 0;
+    } */
+
+    .rebrique-footer ul{
+        display:flex;
+        justify-content:space-around;
+        margin-top: 24px;
     }
     
     
