@@ -134,7 +134,7 @@ h2{
    
 }
 .header img{
-    height: 36px;
+   height: 45px;
 }
  .title h1{
     font-size: 18px;
@@ -505,47 +505,6 @@ h2 {
     justify-content: center;
   }
   
-  .photo1 {
-    height: 400px;
-    padding-bottom: 10px;
-    width: 500px;
-    margin: 5px;
-    background: no-repeat;
-    background-image: url("https://www.lebonguide.com/bundles/website/images/category/large/montagne-ski-surf-ski-de-fond.jpg");
-    background-size: contain;
-    display: inline-block;
-  }
-  
-  .photo2 {
-    height: 400px;
-  
-    width: 500px;
-    margin: 5px;
-    background: no-repeat;
-    background-image: url("https://static.apidae-tourisme.com/filestore/objets-touristiques/images/63/76/937023.jpg");
-    background-size: contain;
-  }
-  
-  .photo3 {
-    height: 400px;
-  
-    width: 500px;
-    margin: 5px;
-    background: no-repeat;
-    background-image: url("https://www.rts.ch/2019/04/04/17/09/10342466.image");
-    background-size: contain;
-  }
-  
-  .photo4 {
-    height: 400px;
-  
-    width: 500px;
-    margin: 5px;
-    background: no-repeat;
-    background-image: url("https://i.ytimg.com/vi/ZgFvuLl-G7E/maxresdefault.jpg");
-    background-size: contain;
-  }
-  
   a:hover {
     transform: scale(1.1);
     color: rgba(255, 255, 255, 0.8);
@@ -579,7 +538,7 @@ h2 {
     
     }
   
-  .ph1 {
+ /*  .ph1 {
     background-image: url("https://www.jackiecuisine.com/wp-content/uploads/2020/02/hypogras-3w.jpg");
     
   }
@@ -599,7 +558,7 @@ h2 {
     background-image: url("https://previews.123rf.com/images/famveldman/famveldman1704/famveldman170400557/76535128-enfant-jouant-dans-le-champ-de-marguerite-fille-cueillir-des-fleurs-fra%C3%AEches-dans-des-marguerites-prai.jpg");
    
   }
-  
+   */
   /*styllebouton*/
   section.button {
       display: flex;
@@ -729,7 +688,7 @@ form {
         padding: 20px 50px 0 50px;
     }
     .header img{
-     height: 35px ;
+     height: 65px ;
     }
     .title h1{
         font-size: 24px;

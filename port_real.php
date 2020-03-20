@@ -57,7 +57,7 @@
           </figure>
     </section>    
 ​
-    <section class="button">
+    <section class="buttonDest">
         <button type="button" class="btn btn-secondary btn-lg btn-block">Réservez</button>
       </section>
     <?php include("_footer.html");?>

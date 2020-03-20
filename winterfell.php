@@ -36,18 +36,29 @@
 ​
     </section>
 ​
+    <section class="contSnippet">
+          <figure class="snip1585">
+            <img src="https://www.lebonguide.com/bundles/website/images/category/large/montagne-ski-surf-ski-de-fond.jpg" alt="sample70" />
+            <figcaption>
+              <h3>balade en <span>ski</span></h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1585"><img src="https://static.apidae-tourisme.com/filestore/objets-touristiques/images/63/76/937023.jpg" alt="sample106" />
+            <figcaption>
+              <h3>Balade en <span>chiens de traineau</span></h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+          <figure class="snip1585"><img src="https://www.rts.ch/2019/04/04/17/09/10342466.image" alt="sample109" />
+            <figcaption>
+              <h3>chasse au <span>marcheur blancs</span></h3>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+    </section>    
 ​
-    <section>
-        <article class="album">
-            
-            <div class="photo1"><p>balade en ski</p></div>
-            <div class="photo2"><p>balade en chiens de traineau</p></div>
-            <div class="photo3"><p>chasse au marcheur blancs</p></div>
-            <div class="photo4"><p>balade en montagne</p></div>
-        </article>
-    </section>
-​
-    <section class="button">
+    <section class="buttonDest">
         <button type="button" class="btn btn-secondary btn-lg btn-block">Réservez</button>
       </section>
         <?php include("_footer.html");?>
