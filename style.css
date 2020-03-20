@@ -29,7 +29,7 @@ h2{
 .titreAcceuil{
     width: 100%;
     color: rgb(204, 79, 30);
-    font-size: 40px;
+    font-size: 30px;
     text-align:center;
     margin-top: 20px;
     text-shadow:1px 1px 1px black ;
@@ -52,8 +52,9 @@ h2{
     align-items: center;
 }
 .conteneurFiltre select{
-   height: 45px;
-   width: 300px;
+   height: 35px;
+   width: 250px;
+   font-size: 18px;
    background-color:rgba(50, 50, 50, 0.8);
    color: rgb(204, 79, 30);
    margin-bottom: 10px;
@@ -626,10 +627,13 @@ h2 {
     }
     .conteneurFiltre select{
         width: 400px;
+        height: 45px;
+        font-size: 20px;
     }
     .conteneurFiltre{
         flex-direction:row;
     }
+    
     .boutonAcc{
         margin-left:75px;
     }
@@ -656,11 +660,11 @@ h2 {
     justify-content: space-around;
 }
 
-.titreAcceuil{
-    font-size: 35px;
+ .titreAcceuil{
+    font-size: 45px;
     padding-bottom: 30px;
     text-align: center;
-}
+} 
 
 section.coordonnées div{
     margin-top: 10px;
