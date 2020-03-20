@@ -1,0 +1,1015 @@
+
+ @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    font-weight:bold;
+    background-color: rgba(197,195,187,0.8);
+
+}
+
+h2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    
+}
+/*acceuil*/
+
+
+#imgSlide{
+    width: 100%;
+    
+    position: absolute;
+    z-index: 5;
+    top:0;
+    
+   
+ 
+}
+.titreAcceuil{
+    width: 100%;
+    color: rgb(204, 79, 30);
+    font-size: 40px;
+    text-align:center;
+    margin-top: 20px;
+    text-shadow:1px 1px 1px black ;
+    z-index: 7;
+    font-family: 'Amatic SC', cursive;
+}
+.headAcceuil{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+}
+.conteneurFiltre{
+    height: 100%;
+    display:flex;
+    z-index: 6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteneurFiltre select{
+   height: 45px;
+   width: 300px;
+   background-color:rgba(50, 50, 50, 0.8);
+   color: rgb(204, 79, 30);
+   margin-bottom: 10px;
+   padding: 7px;
+   border: none;
+   font-weight: bold;
+   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+   outline: none;
+}
+.conteneurFiltre select option{
+    background-color:rgba(50, 50, 50, 1);
+}
+.conteneurcolone{
+    height: 100%;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grand{
+    display:none;
+}
+.boutonAcc{
+    background-color:rgba(50, 50, 50, 0.8);
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(204, 79, 30);
+}
+.boutonAcc:hover{
+    color: rgb(204, 79, 30);
+}
+.carte{
+    width: 100%;
+}
+
+.conteneurLigne{
+    display: flex;
+    justify-content: space-between;;
+    margin-top: 30px;
+    
+}
+.btnSuivant{
+    background-color: rgba(0,0,0,0);
+    border:none;
+    font-size: 70px;
+    outline: none;
+    color:rgba(204, 79, 30,0.5);
+    font-family: 'Poppins', sans-serif;
+    z-index: 6;
+}
+.btnSuivant:hover{
+    color:rgba(204, 79, 30, 1);
+}
+
+.phraseAcceuil article{
+    font-size: 22px;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+
+.carte iframe{
+    width: 100%;
+}
+
+
+/*header*/
+.menu{
+    width:100%;
+    margin-bottom: 10px;
+}
+.header{
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.header img{
+    height: 36px;
+}
+ .title h1{
+    font-size: 18px;
+    color: rgb(5, 21, 26);
+    font-family: 'Fondamento', cursive;
+    text-shadow: 0.5px 1px rgb(206, 61, 24);
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    background:rgb(5, 21, 26);
+    padding: 6px 8px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.fa-bars{
+    margin: 2px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.fa-bars::before{
+    display: none;
+}
+
+.dropdown{
+    width:100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(5, 21, 26);
+    border-radius:4px;
+    overflow:hidden;
+    transition:all .7s;
+    max-height:0;
+    font-family: 'Roboto', sans-serif;
+}
+.down{
+    max-height:150px;
+}
+.arrow.gone{
+    display:block;
+}
+.dropdown a{
+    padding:7px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(206, 61, 24);
+}
+a:hover{
+    transform:scale(1.10);
+    color:rgba(255,255,255,0.8);
+    transition:all .1s;
+}
+
+   /* page-reservation */
+
+   h1.reservation {
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+label[for=destination] {
+    margin-left: 15px;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+.destination {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+.select {
+    width: 96%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 18px;;
+    background-color: white;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.date section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 95%;
+    height: 70px;
+}
+input#start {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+input#return {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.voyageur {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 96%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+input#voyageur {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.button {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#po img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+/* contact */
+
+.coordonnées{
+    display: flex;
+    justify-content: space-around;
+}
+​
+section.coordonnées div{
+    margin-top: 10px;
+    background-color: #aaaaaa;
+    padding: 10px;
+}
+​
+​
+form {
+    margin-top: 100px;
+    border: 1px gray solid;
+  }
+  
+  #fields-container {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+  }
+  
+  form h2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 1px gray solid;
+  }
+
+  p{
+      font-size: 24px;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    padding: 3px;
+    width: 100%;
+    margin: 8px 0px;
+    box-sizing: border-box;
+  }
+  
+  form .button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  
+  form button {
+    background-color: #aaaaaa;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin: 0;
+  }
+​
+  .nom{
+      display: flex;
+  }
+​
+  .map{
+      display: flex;
+      justify-content: center;
+  }
+  .horaires{
+      text-align: center;
+  }
+​
+  #phone{
+    display: flex;
+    justify-content: center;
+  }
+  .texte div{
+      display: flex;
+      justify-content: space-around;
+  }
+
+
+/*footer yacine Début*/
+
+.color-diff-back{
+    width: auto;
+    height: 10px;
+    margin:0px;
+}
+
+.back-color{
+    background-color:rgb(5, 21, 26);
+    width: auto;
+    margin: 0;
+}
+footer div h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.copy{
+    text-align: center;
+    color: #e4f1e7;
+    font-size: 20px;
+    padding-top: 60px;
+}
+.logo-footer{
+    width: 180px;
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+.color-point{
+    color:#ff9135;
+}
+.hr-footer{
+    margin-bottom: 30px;
+}
+.reseau-sociau{
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+footer a{
+    text-decoration-line: none;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#e4f1e7;
+}
+footer a:visited{
+    color:#e4f1e7;
+}
+footer a:link{
+    color:#e4f1e7;
+}
+.figure-footer {
+    text-align: center;
+}
+.figuration-footer{
+    color: #e4f1e7;
+}
+.img-soc-paiem{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.img-paiement-footer{
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+}
+.end-color-footer{
+    background-color: #ff9135;
+    width: auto;
+    height: 10px;
+    margin:0px;
+}
+.rebrique-footer{
+    color:#e4f1e7;
+}
+.rebrique-footer{
+    margin-right: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+.rebrique-footer ul{
+    list-style: none;
+}
+.rebrique-footer ul li{
+    margin-bottom: 10px
+}
+.logo-footer:hover{
+    opacity: 0.9;
+}
+.h1-footer:hover{
+    opacity: 0.8;
+}
+.reseau-sociau:hover{
+    opacity: 0.7;
+}
+.img-paiement-footer:hover{
+    opacity: 0.7;
+}
+.rebrique-footer ul li:hover{
+    opacity: 0.7;
+}
+
+
+/* page-reservation1 winterfell */
+
+h2 {
+    text-align: center;
+    font-family: "Fondamento", cursive;
+  }
+  
+  .titre {
+    text-align: center;
+  }
+  
+  .text1 {
+    text-align: center;
+    padding: 0 40px;
+  }
+  
+  .winter {
+    background-image: url("https://iphonesoft.fr/images/_082019/fond-ecran-dynamique-macos-wallpaper-club.jpg");
+  }
+  
+  .image-fond {
+    background: no-repeat;
+    height: 100px;
+    background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/801_Winterfell_Overview.png/revision/latest?cb=20190415031728");
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    margin: 0 50px 50px 50px;
+    padding: 50px;
+  }
+  
+  .album {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .photo1 {
+    height: 400px;
+    padding-bottom: 10px;
+    width: 500px;
+    margin: 5px;
+    background: no-repeat;
+    background-image: url("https://www.lebonguide.com/bundles/website/images/category/large/montagne-ski-surf-ski-de-fond.jpg");
+    background-size: contain;
+    display: inline-block;
+  }
+  
+  .photo2 {
+    height: 400px;
+  
+    width: 500px;
+    margin: 5px;
+    background: no-repeat;
+    background-image: url("https://static.apidae-tourisme.com/filestore/objets-touristiques/images/63/76/937023.jpg");
+    background-size: contain;
+  }
+  
+  .photo3 {
+    height: 400px;
+  
+    width: 500px;
+    margin: 5px;
+    background: no-repeat;
+    background-image: url("https://www.rts.ch/2019/04/04/17/09/10342466.image");
+    background-size: contain;
+  }
+  
+  .photo4 {
+    height: 400px;
+  
+    width: 500px;
+    margin: 5px;
+    background: no-repeat;
+    background-image: url("https://i.ytimg.com/vi/ZgFvuLl-G7E/maxresdefault.jpg");
+    background-size: contain;
+  }
+  
+  a:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.1s;
+  }
+  
+  /* port-royal */
+  
+  .summer {
+      background-image: url("https://hdfondsdecran.com/image/201609/2213/rayon-orange-arriere-plan-flou.jpg");
+    }
+    
+    .image-fond1 {
+      background: no-repeat;
+      height: 100px;
+      background-image: url("https://img.20mn.fr/W3Ps9vQDS6-pQWggu7rUvg/830x532_envie-evasion-partez-lieux-tournage-serie-game-of-thrones.jpg");
+      background-attachment: fixed;
+      flex-wrap: wrap;
+      margin: 0 50px 50px 50px;
+      padding: 50px;
+    }
+  
+    .ph{
+        height: 400px;
+    padding-bottom: 10px;
+    width: 500px;
+    margin: 5px;
+    background: no-repeat;
+    background-size: 500px 300px;
+    display: inline-block;
+    
+    }
+  
+  .ph1 {
+    background-image: url("https://www.jackiecuisine.com/wp-content/uploads/2020/02/hypogras-3w.jpg");
+    
+  }
+  
+  .ph2 {
+    background-image: url("https://m.oxybol.fr/scripts/files/587d42893b3159.41172983/balade-cheval-oxybol.jpg");
+    
+  }
+  
+  .ph3 {
+    
+    background-image: url("https://cdn02.visitbarcelona.com/files/5531-5624-imagenCAT/BarcelonaJetSki.T24c.jpg");
+    
+  }
+  
+  .ph4 {
+    background-image: url("https://previews.123rf.com/images/famveldman/famveldman1704/famveldman170400557/76535128-enfant-jouant-dans-le-champ-de-marguerite-fille-cueillir-des-fleurs-fra%C3%AEches-dans-des-marguerites-prai.jpg");
+   
+  }
+  
+  /*styllebouton*/
+  section.button {
+      display: flex;
+      width: 400px;
+      height: 40px;
+      margin: 20px auto;
+      justify-content: center;
+      text-align: center;
+      background-color: whitesmoke;
+  }
+/*footer yacine Fin*/
+
+@media screen and (min-width: 740px) {
+
+    /*acceuil*/
+    #imgSlide{
+        width: 100%;
+        border-radius: 5px;
+        
+    }
+    .headAcceuil{
+       
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .conteneurFiltre select{
+        width: 400px;
+    }
+    .conteneurFiltre{
+        flex-direction:row;
+    }
+    .boutonAcc{
+        margin-left:75px;
+    }
+    .carte{
+        display: flex;
+        justify-content: center;
+    }
+    .carte iframe{
+        max-width: 800px;
+    }
+    .phraseAcceuil article{
+        font-size:30px;
+    }
+    .petit{
+        display: none;
+    }
+    .grand{
+        display: inline;
+    }
+
+/*contact*/
+.coordonnées{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titreAcceuil{
+    font-size: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+section.coordonnées div{
+    margin-top: 10px;
+}
+
+
+form {
+    margin-top: 100px;
+  }
+  
+  #fields-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  form h2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    padding: 3px;
+    width: 100%;
+    margin: 8px 0px;
+    box-sizing: border-box;
+  }
+  
+  form .button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  
+  form button {
+    background-color: #aaaaaa;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin: 0;
+  }
+
+  .nom{
+      display: flex;
+  }
+
+  .carte-info{
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+
+  .info{
+      width: 60%;
+  }
+
+    body{
+       margin: 0 50px;
+    }
+
+    .header{
+        padding: 20px 50px 0 50px;
+    }
+    .header img{
+     height: 35px ;
+    }
+    .title h1{
+        font-size: 24px;
+    }
+    .burger{
+        display: none;
+    }
+    .dropdown{
+        justify-content: flex-end;
+        flex-direction: row;
+        height: 45px;
+        max-height: none;
+        position: sticky;
+        top: 0;
+        overflow: visible;
+        margin-bottom: 5px;
+        z-index: 10;
+    }
+    .dropdown a{
+       margin: 0 40px;
+       font-size: 15px;
+       text-decoration: none;
+    }
+/*================@media screen and (min-width: 740px) yacine footer Début*/
+    .logo-footer{
+        width: 250px;
+        height: 120px;
+    }
+    .figure-footer{
+        float:left;
+        margin-left: 50px;
+    }
+    .back-color{
+        height:575px; 
+    }
+    .rebrique-footer{
+        float: right;
+        font-size: 24px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .copy{
+        text-align: center;
+        margin-top: 210px;
+    }
+    .img-soc-paiem{
+        margin-top: 15px;
+    }
+    .reseau-sociau{
+        margin-left: 10px;
+    }
+    .rebrique-footer{
+        text-align:inherit;
+    }
+    .h1-footer{
+        margin-bottom: 0;
+        text-align: center;
+        font-style: 35;
+    }
+    .rebrique-footer ul li{
+        margin-bottom: 0;
+    }
+    .a-logo-footer{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .headAcceuil{
+        height: 700px;
+    }
+    .conteneurFiltre select{
+        width: 400px;
+    }
+    .conteneurFiltre{
+        flex-direction:row;
+    }
+    .boutonAcc{
+        margin-left:75px;
+    }
+
+    .carte{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    section.button {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    }
+
+    /* page-reservation */
+
+    .destination {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+​  /* page-reservation */
+
+.image-fond {
+  background: no-repeat;
+  height: 380px;
+  background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/801_Winterfell_Overview.png/revision/latest?cb=20190415031728");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.album {
+  flex-direction: row;
+  justify-content: center;
+}
+}
+
+.image-fond1 {
+  background: no-repeat;
+  height: 380px;
+  background-image: url("https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/7/71/Port-R%C3%A9al_vu_depuis_la_tour_de_la_main_%282x01%29.jpg/revision/latest?cb=20170716182940&path-prefix=fr");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* snippet anim image*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+.snip1585 {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 10px;
+  max-width: 756px;
+  min-width: 552px; 
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.contSnippet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.snip1585 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1585:before,
+.snip1585:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 80px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 80px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+}
+
+.snip1585:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.snip1585 img {
+  vertical-align: top;
+  max-width: 756px;
+  min-width: 552px;
+  backface-visibility: hidden;
+}
+
+.snip1585 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.snip1585 h3 {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.snip1585 h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.snip1585 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1585:hover > img,
+.snip1585.hover > img {
+  opacity: 0.7;
+}
+
+.snip1585:hover:before,
+.snip1585.hover:before,
+.snip1585:hover:after,
+.snip1585.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.snip1585:hover figcaption,
+.snip1585.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+/* snippet changement couleur de fond */
+
+/* 
+  .winterfell{
+    
+    background-color: rgb(95, 211, 195, 0.5);
+    color: rgb(95, 211, 195);
+
+  }
+  .portReal{
+    background-color:rgb(245, 188, 104);
+
+  }
+  
+  body {
+    background-color: var(--background-color);
+  }
+    */
