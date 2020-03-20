@@ -22,13 +22,9 @@ h2{
 
 #imgSlide{
     width: 100%;
-    
     position: absolute;
     z-index: 5;
     top:0;
-    
-   
- 
 }
 .titreAcceuil{
     width: 100%;

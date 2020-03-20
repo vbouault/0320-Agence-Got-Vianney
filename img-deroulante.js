@@ -131,15 +131,14 @@ function switchTheme() {
 
 //Ajustement hauteur du conteneur acceuil
 
- function getTheStyle(){
-  let image = document.getElementById("imgSlide");
+ const ajustHeigth = (idImg, idConteneur) =>{
+  let image = document.getElementById(idImg);
   let HeigthImg = window.getComputedStyle(image,null).getPropertyValue("height");
-  let headAcc = document.getElementById("headAcc");
+  let headAcc = document.getElementById(idConteneur);
   headAcc.style.setProperty('height', HeigthImg);
-  setTimeout
  }
 
- setInterval('getTheStyle()',50);
+ setInterval('ajustHeigth("imgSlide","headAcc")',50);
  
 
 
