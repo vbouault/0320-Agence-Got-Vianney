@@ -977,7 +977,8 @@ form {
 
   /*   modal reservation */
 
-  .modal-body p{
+  .modal-body article{
       font-size: 20px;
       font-weight: 200;
+      font-family: 'Fondamento', cursive;
   }

@@ -4,30 +4,52 @@ function changePrix(){
     var nbPersonnes = document.getElementById('voyageur').value;
     var prix = document.getElementById('spanPO');
     if (Destination=="port_real"){
-      prix.innerHTML = nbPersonnes*249;
       price = nbPersonnes*249;
+      prix.innerHTML = price;
     }
     else if(Destination=="winterfell"){
-      prix.innerHTML = nbPersonnes*299;
       price = nbPersonnes*299;
+      prix.innerHTML = price;
     }
     else{
-      prix.innerHTML = 0;
+      price = 0;
+      prix.innerHTML = price;
+      
     }
   }
 
+  class Modal {
+    constructor(idForm,idModal){
+      this._idForm = idForm;
+      this._idModal = idModal;
+      this._valueIdForm = document.getElementById(this._idForm).value;
+    }
+    getValue(){
+      if (this._valueIdForm[4]==='-' && this._valueIdForm[7]==='-'){
+        this._valueIdForm = this._valueIdForm.split('-');
+        this._valueIdForm = `${this._valueIdForm[2]}/${this._valueIdForm[1]}/${this._valueIdForm[0]}`;
+        document.getElementById(this._idModal).innerHTML = this._valueIdForm;
+      }
+      else{
+        document.getElementById(this._idModal).innerHTML = this._valueIdForm;
+      }
+      
+    }
+  }
+  
 
   const boutonResa = document.getElementById('boutonResa');
   boutonResa.addEventListener("click", changeTxtModal);
-
+  
   function changeTxtModal(){
-    const name = document.getElementById('resaNom').value;
-    const lieu = document.getElementById('destination').value;
-    const modalName = document.getElementById('modalName');
-    const modalLieu = document.getElementById('modalLieu');
-    const modalPrix = document.getElementById('modalPrix');
-
-    modalName.innerHTML = name;
-    modalLieu.innerHTML = lieu;
-    modalPrix.innerHTML = price;
+    new Modal('resaNom','modalName').getValue();
+    new Modal('destination','modalLieu').getValue();
+    new Modal('start','modalDepart').getValue();
+    new Modal('return','modalRetour').getValue();
+    new Modal('voyageur','modalVoyageurs').getValue();
+    document.getElementById('modalPrix').innerHTML = price;
   }
+
+
+
+

@@ -17,14 +17,19 @@
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Bonjour <span id="modalName">Vianney</span></h5>
+       <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalCenterTitle">Bonjour <span id="modalName" ></span>, merci de vérifier les informations suivante avant de validez votre réservation</h5> 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
+      </div> 
       <div class="modal-body">
-        <p>Etes vous sur de vouloir partir a <span id="modalLieu">Winterfell</span> pour <span id="modalPrix">998</span> Pièce d'or?</p>
+        
+        <article>Lieu : <span id="modalLieu" ></span></article>
+        <article>Nombre de voyageurs : <span id="modalVoyageurs" ></span></article>
+        <article>Date départ : <span id="modalDepart" ></span></article>
+        <article>Date retour : <span id="modalRetour" ></span></article>
+        <article>Prix : <span id="modalPrix" ></span> €</article>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
@@ -40,11 +45,11 @@
 <section class="formulaire">
 <section class="destination">
 <label for="resaNom">Qui?</label>
-<input type="text" id="resaNom">
+<input type="text" id="resaNom" >
 </section>
 <section class="destination">
   <label for="destination">Où?</label>
-  <select class="select" name="destination" id="destination" onclick = "changePrix()">
+  <select class="select formClass" name="destination" id="destination" onclick = "changePrix()">
     <option value=""></option>
     <option value="port_real">Port Real</option>
     <option value="winterfell">Winterfell</option>
@@ -56,16 +61,16 @@
 <section class="date">
 <section>
   <label for="start">Départ</label>
-  <input type="date" id="start" name="start" min="2020-06-01" max="2021-12-24">
+  <input   type="date" id="start" name="start" min="2020-06-01" max="2021-12-24">
 </section>
 <section>
   <label for="return">Retour</label>
-  <input type="date" id="return" name="return" min="2020-06-07" max="2021-12-31">
+  <input   type="date" id="return" name="return" min="2020-06-07" max="2021-12-31">
 </section>
 </section>
 
 <section class="voyageur">
-  <input id="voyageur" type="number" placeholder="Nombre de personnes" min="1" max="15" required onclick = "changePrix()">
+  <input   id="voyageur" type="number" placeholder="Nombre de personnes" min="1" max="15" required onclick = "changePrix()">
 </section>
 
 <section>
