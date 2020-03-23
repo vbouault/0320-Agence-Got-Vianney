@@ -974,3 +974,10 @@ form {
     background-color: var(--background-color);
   }
     */
+
+  /*   modal reservation */
+
+  .modal-body p{
+      font-size: 20px;
+      font-weight: 200;
+  }

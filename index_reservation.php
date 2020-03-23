@@ -12,10 +12,36 @@
   <?php include('_header.html'); ?>
   </header>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Bonjour <span id="modalName">Vianney</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Etes vous sur de vouloir partir a <span id="modalLieu">Winterfell</span> pour <span id="modalPrix">998</span> Pièce d'or?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
+        <button type="button" class="btn btn-primary">Validez la reservation</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <h1 class="reservation">Formulaire de réservation</h1>
 
 <section class="formulaire">
-
+<section class="destination">
+<label for="resaNom">Qui?</label>
+<input type="text" id="resaNom">
+</section>
 <section class="destination">
   <label for="destination">Où?</label>
   <select class="select" name="destination" id="destination" onclick = "changePrix()">
@@ -47,7 +73,7 @@
 </section>
 
 <section class="button">
-  <button type="button" class="btn btn-secondary btn-lg btn-block ">Réservez</button>
+  <button id="boutonResa" type="button" class="btn btn-secondary btn-lg btn-block " data-toggle="modal" data-target="#exampleModalCenter">Réservez</button>
 </section>
 
 
@@ -57,7 +83,7 @@
 <footer>
 <?php include('_footer.html'); ?>
 </footer>
-<script src="img-deroulante.js"></script>
+<script src="resa.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

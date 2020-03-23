@@ -1,4 +1,4 @@
-var imgs=[
+const imgs=[
   'https://images8.alphacoders.com/932/thumb-1920-932618.jpg',
   'https://wallpapers.justgeek.fr/web/wallpapers/le-trone-de-fer-game-of-thrones-155992551327/1920x1080.jpg',
   'https://i0.wp.com/wallur.com/wp-content/uploads/2016/12/song-ice-background-11.jpg?fit=1920%2C1080',
@@ -6,9 +6,9 @@ var imgs=[
 ];
 
 
-var nbImgs=imgs.length;
-var position=0;
-var time=4000;
+const nbImgs=imgs.length;
+let position=0;
+const time=4000;
 
 function changeImg(){
     document.getElementById("imgSlide").src=imgs[position];
@@ -62,21 +62,6 @@ function drop() {
       document.getElementsByClassName('dropdown')[0].style.overflow = ('hidden')
     }, 500)
 } 
-  
-function changePrix(){
-  var Destination = document.getElementById('destination').value;
-  var nbPersonnes = document.getElementById('voyageur').value;
-  var prix = document.getElementById('spanPO');
-  if (Destination=="port_real"){
-    prix.innerHTML = nbPersonnes*249;
-  }
-  else if(Destination=="winterfell"){
-    prix.innerHTML = nbPersonnes*299;
-  }
-  else{
-    prix.innerHTML = 0;
-  }
-}
 
 //snippet
 
@@ -139,6 +124,8 @@ function switchTheme() {
  }
 
  setInterval('ajustHeigth("imgSlide","headAcc")',50);
+
+
  
 
 
