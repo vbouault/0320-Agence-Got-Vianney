@@ -25,11 +25,11 @@
       </div> 
       <div class="modal-body">
         
-        <article>Lieu : <span id="modalLieu" ></span></article>
-        <article>Nombre de voyageurs : <span id="modalVoyageurs" ></span></article>
-        <article>Date départ : <span id="modalDepart" ></span></article>
-        <article>Date retour : <span id="modalRetour" ></span></article>
-        <article>Prix : <span id="modalPrix" ></span> €</article>
+        <div><article>Lieu : </article><span id="modalLieu" ></span></div>
+        <div><article>Nombre de voyageurs : </article><span id="modalVoyageurs" ></span></div>
+        <div><article>Date départ : </article><span id="modalDepart" ></span></div>
+        <div><article>Date retour : </article><span id="modalRetour" ></span></div>
+        <div><article>Prix : </article><span id="modalPrix" ></span><span>€</span></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
@@ -43,34 +43,35 @@
   <h1 class="reservation">Formulaire de réservation</h1>
 
 <section class="formulaire">
-<section class="destination">
-<label for="resaNom">Qui?</label>
-<input type="text" id="resaNom" >
-</section>
-<section class="destination">
-  <label for="destination">Où?</label>
-  <select class="select formClass" name="destination" id="destination" onclick = "changePrix()">
-    <option value=""></option>
-    <option value="port_real">Port Real</option>
-    <option value="winterfell">Winterfell</option>
-  </select>
+  <section class="destination">
+    <label for="resaNom">Qui? <span id="errorName"></span></label>
+    <input type="text" id="resaNom" >
+  </section>
+  <section class="destination">
+    <label for="destination">Où? <span id="errorDestination"></span></label>
+    <select class="select formClass" name="destination" id="destination" onclick = "changePrix()">
+      <option value=""></option>
+      <option value="Port Real">Port Real</option>
+      <option value="Winterfell">Winterfell</option>
+    </select>
 </section>
 
 
 
 <section class="date">
 <section>
-  <label for="start">Départ</label>
+  <label for="start">Départ <span id="errorDepart"></span></label>
   <input   type="date" id="start" name="start" min="2020-06-01" max="2021-12-24">
 </section>
 <section>
-  <label for="return">Retour</label>
+  <label for="return">Retour <span id="errorRetour"></span></label>
   <input   type="date" id="return" name="return" min="2020-06-07" max="2021-12-31">
 </section>
 </section>
 
 <section class="voyageur">
-  <input   id="voyageur" type="number" placeholder="Nombre de personnes" min="1" max="15" required onclick = "changePrix()">
+<label for="return">Nombre de voyageur <span id="errorVoyageur"></span></label>
+  <input   id="voyageur" type="number"  min="1" max="15" required onclick = "changePrix()">
 </section>
 
 <section>
@@ -78,7 +79,7 @@
 </section>
 
 <section class="button">
-  <button id="boutonResa" type="button" class="btn btn-secondary btn-lg btn-block " data-toggle="modal" data-target="#exampleModalCenter">Réservez</button>
+  <button id="boutonResa" type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#exampleModalCenter">Réservez</button>
 </section>
 
 

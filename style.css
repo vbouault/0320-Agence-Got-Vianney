@@ -203,43 +203,43 @@ a:hover{
     margin-top:50px;
     margin-bottom: 50px;
 }
-label[for=destination] {
-    margin-left: 15px;
-}
+
 .formulaire {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    padding:20px;
     background-color: whitesmoke;
 }
-.destination {
+
+.destination, .voyageur {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 20px;
     margin-left: 0;
     margin-bottom: 0;
     width: 100%;
 }
 .select {
-    width: 96%;
+    width: 100%;
     height: 40px;
-    margin: 10px;
-    margin-left: 18px;;
     background-color: white;
 }
 .date {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 .date section {
     display: flex;
     flex-direction: column;
-    margin: 20px;
     width: 95%;
     height: 70px;
 }
 input#start {
-    width: 100%;
+    width: 95%;
     height: 100%;
     margin-bottom: 10px;
 }
@@ -248,11 +248,12 @@ input#return {
     height: 100%;
     margin-bottom: 10px;
 }
-.voyageur {
+/* .voyageur {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 20px;
-    width: 96%;
+    width: 100%;
     height: 40px;
     margin-bottom: 30px;
 }
@@ -261,7 +262,7 @@ input#voyageur {
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+} */
 section.button {
     display: flex;
     width: 400px;
@@ -794,15 +795,7 @@ form {
 
     /* page-reservation */
 
-    .destination {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin-top: 20px;
-        margin-left: 0;
-        margin-bottom: 0;
-        width: 100%;
-    }
+  
 
 ​  /* page-reservation */
 
@@ -978,7 +971,17 @@ form {
   /*   modal reservation */
 
   .modal-body article{
-      font-size: 20px;
-      font-weight: 200;
-      font-family: 'Fondamento', cursive;
+      width: 50%;
+  }
+  .modal-body{
+      display: flex;
+      flex-direction: column;
+  }
+  .modal-body div{
+      display: flex;
+  }
+  #exampleModalCenter{
+    font-family: 'Fondamento', cursive;
+    font-size: 20px;
+    font-weight: 200;
   }
