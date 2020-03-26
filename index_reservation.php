@@ -13,7 +13,7 @@
   
   <?php include('_header.html'); ?>
 
-
+ 
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -26,6 +26,7 @@
         </button>
       </div> 
       <div class="modal-body">
+      
         
         <div><article>Lieu : </article><span id="modalLieu" ></span></div>
         <div><article>Nombre de voyageurs : </article><span id="modalVoyageurs" ></span></div>
@@ -34,6 +35,9 @@
         <div><article>Prix : </article><span id="modalPrix" ></span><span>€</span></div>
       </div>
       <div class="modal-footer">
+        <div class="spinner-border text-secondary" role="status" id="charge">
+          <span class="sr-only">Loading...</span>
+        </div>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
         <button type="button" class="btn btn-primary" id="validResa">Validez la reservation</button>
       </div>

@@ -88,7 +88,7 @@
     </section>    
 ​
     <section class="buttonDest">
-        <button type="button" class="btn btn-secondary btn-lg btn-block">Réservez</button>
+        <a href="index_reservation.php"><button type="button" class="btn btn-secondary btn-lg btn-block btnDest">Réservez</button></a>
       </section>
     <?php include("_footer.html");?>
     <!-- <script src="img-deroulante.js"></script> -->

@@ -84,9 +84,17 @@ function changePrix(){
   }
   
   const validResa = document.getElementById('validResa');
+  validResa.addEventListener("click", afficheChargement);
   validResa.addEventListener("click", redirectionResa);
-  function redirectionResa(){
-    modalLieu._elemForm.value === "Port Real" ? document.location.href="port_real.php" : document.location.href="winterfell.php";
-  } 
 
+  function redirectionResa(){
+    setTimeout(tempo,5000);
+    function tempo(){
+      modalLieu._elemForm.value === "Port Real" ? document.location.href="port_real.php" : document.location.href="winterfell.php";
+    }
+      
+  } 
+  function afficheChargement(){
+    document.getElementById('charge').style.display='block';
+  }
 
