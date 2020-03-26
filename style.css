@@ -395,7 +395,14 @@ footer div h1 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    transition: all 0.75s ease;
 }
+  .logo-footer:hover{
+     width:115px;
+    height:115px;
+    border-radius: 50%; 
+    transform: rotate(360deg);
+  }
 .color-point{
     color:#ff9135;
 }
@@ -589,6 +596,11 @@ h2 {
 #charge{
     display: none;
 }
+.modal-content{
+    background-color: rgb(5, 21, 26);
+    color: #e4f1e7;
+}
+
 
 @media screen and (min-width: 740px) {
 

@@ -17,13 +17,13 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document" >
     <div class="modal-content">
        <div class="modal-header">
-       <h5 class="modal-title" id="exampleModalCenterTitle">Bonjour <span id="modalName" ></span>, merci de vérifier les informations suivante avant de validez votre réservation</h5> 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <h5 class="modal-title" id="exampleModalCenterTitle">Bonjour <span id="modalName" ></span>, merci de vérifier les informations suivante avant de validez votre réservation :</h5> 
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
+        </button> -->
       </div> 
       <div class="modal-body">
       
@@ -38,8 +38,8 @@
         <div class="spinner-border text-secondary" role="status" id="charge">
           <span class="sr-only">Loading...</span>
         </div>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
-        <button type="button" class="btn btn-primary" id="validResa">Validez la reservation</button>
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-outline-success" id="validResa">Valider la reservation</button>
       </div>
     </div>
   </div>

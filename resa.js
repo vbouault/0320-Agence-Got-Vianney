@@ -68,12 +68,12 @@ function changePrix(){
  
     
   function changeTxtModal(){
-    if (modalName._elemForm.value === "" || modalLieu._elemForm.value === "" || modalDepart._elemForm.value === "" || modalRetour._elemForm.value === "" || modalVoyageurs._elemForm.value === ""){
+/*     if (modalName._elemForm.value === "" || modalLieu._elemForm.value === "" || modalDepart._elemForm.value === "" || modalRetour._elemForm.value === "" || modalVoyageurs._elemForm.value === ""){
       boutonResa.setAttribute('data-target','');
     }
     else{
       boutonResa.setAttribute('data-target','#exampleModalCenter');
-    }
+    } */
     modalName.getValue();
     modalLieu.getValue();
     modalDepart.getValueDate();
