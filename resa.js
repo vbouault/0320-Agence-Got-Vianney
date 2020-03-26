@@ -19,6 +19,7 @@ function changePrix(){
   }
 
   const boutonResa = document.getElementById('boutonResa');
+  
 
   class Modal {
     constructor(idForm,idModal,idError,msgError){
@@ -37,7 +38,7 @@ function changePrix(){
       }
       else{
         document.getElementById(this._idModal).innerHTML = document.getElementById(this._idForm).value;
-        this._elemForm.style.border='1px solid black';
+        this._elemForm.style.border='1px solid gray';
       }
     }
     getValueDate(){
@@ -50,20 +51,21 @@ function changePrix(){
         date = date.split('-');
         date = `${date[2]}/${date[1]}/${date[0]}`;
         document.getElementById(this._idModal).innerHTML = date;
-        this._elemForm.style.border='1px solid black';
+        this._elemForm.style.border='1px solid gray';
       }
       
       
     }
   }
   
-    const modalName = new Modal('resaNom','modalName','errorName','merci d\'entrez votre nom');
-    const modalLieu = new Modal('destination','modalLieu','errorDestination','merci d\'entrez la destination souhaitez');
-    const modalDepart = new Modal('start','modalDepart','errorDepart','merci d\'entrez la date de départ');
-    const modalRetour = new Modal('return','modalRetour','errorRetour','merci d\'entrez la date de retour');
-    const modalVoyageurs = new Modal('voyageur','modalVoyageurs','errorVoyageur','merci d\'entrez le nombre de voyageur');
+    const modalName = new Modal('resaNom','modalName','errorName','');
+    const modalLieu = new Modal('destination','modalLieu','errorDestination','');
+    const modalDepart = new Modal('start','modalDepart','errorDepart','');
+    const modalRetour = new Modal('return','modalRetour','errorRetour','');
+    const modalVoyageurs = new Modal('voyageur','modalVoyageurs','errorVoyageur','');
 
   boutonResa.addEventListener("click", changeTxtModal);
+ 
     
   function changeTxtModal(){
     if (modalName._elemForm.value === "" || modalLieu._elemForm.value === "" || modalDepart._elemForm.value === "" || modalRetour._elemForm.value === "" || modalVoyageurs._elemForm.value === ""){
@@ -80,6 +82,11 @@ function changePrix(){
     document.getElementById('modalPrix').innerHTML = price;
     
   }
-
+  
+  const validResa = document.getElementById('validResa');
+  validResa.addEventListener("click", redirectionResa);
+  function redirectionResa(){
+    modalLieu._elemForm.value === "Port Real" ? document.location.href="port_real.php" : document.location.href="winterfell.php";
+  } 
 
 

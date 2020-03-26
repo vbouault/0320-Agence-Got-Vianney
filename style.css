@@ -215,12 +215,14 @@ a:hover{
 
 .destination, .voyageur {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 0;
     margin-bottom: 0;
     width: 100%;
+}
+.voyageur{
+    margin-top: 20px;
 }
 .select {
     width: 100%;
@@ -248,7 +250,7 @@ input#return {
     height: 100%;
     margin-bottom: 10px;
 }
-/* .voyageur {
+/*  .voyageur {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,7 +264,7 @@ input#voyageur {
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-} */
+}  */
 section.button {
     display: flex;
     width: 400px;
@@ -489,12 +491,10 @@ h2 {
   
   .image-fond {
     background: no-repeat;
-    height: 100px;
+    height: 300px;
     background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/801_Winterfell_Overview.png/revision/latest?cb=20190415031728");
     background-attachment: fixed;
     flex-wrap: wrap;
-    margin: 0 50px 50px 50px;
-    padding: 50px;
   }
   
   .album {
@@ -524,8 +524,6 @@ h2 {
       background-image: url("https://img.20mn.fr/W3Ps9vQDS6-pQWggu7rUvg/830x532_envie-evasion-partez-lieux-tournage-serie-game-of-thrones.jpg");
       background-attachment: fixed;
       flex-wrap: wrap;
-      margin: 0 50px 50px 50px;
-      padding: 50px;
     }
   
     .ph{
@@ -572,7 +570,19 @@ h2 {
   }
 /*footer yacine Fin*/
 
+.coll{
+    max-width: 756px;
+}
+.coll h3{
+    font-weight: bold;
+}
+.coll p{
+    font-weight: normal;
+}
+
 @media screen and (min-width: 740px) {
+
+    
 
     /*acceuil*/
     #imgSlide{
@@ -801,7 +811,7 @@ form {
 
 .image-fond {
   background: no-repeat;
-  height: 380px;
+  height: 300px;
   background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/1/1f/801_Winterfell_Overview.png/revision/latest?cb=20190415031728");
   background-attachment: fixed;
   background-position: center;
@@ -815,7 +825,7 @@ form {
 
 .image-fond1 {
   background: no-repeat;
-  height: 380px;
+  height: 300px;
   background-image: url("https://vignette.wikia.nocookie.net/game-of-thrones-le-trone-de-fer/images/7/71/Port-R%C3%A9al_vu_depuis_la_tour_de_la_main_%282x01%29.jpg/revision/latest?cb=20170716182940&path-prefix=fr");
   background-attachment: fixed;
   background-position: center;
@@ -985,3 +995,4 @@ form {
     font-size: 20px;
     font-weight: 200;
   }
+

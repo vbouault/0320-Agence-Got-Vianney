@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <title></title>
 <body>
-  <header>
+
+
+  
   <?php include('_header.html'); ?>
-  </header>
+
 
 
 <!-- Modal -->
@@ -33,11 +35,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulez</button>
-        <button type="button" class="btn btn-primary">Validez la reservation</button>
+        <button type="button" class="btn btn-primary" id="validResa">Validez la reservation</button>
       </div>
     </div>
   </div>
 </div>
+
 
 
   <h1 class="reservation">Formulaire de réservation</h1>
